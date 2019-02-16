@@ -1,0 +1,24 @@
+Name: Maddy Toth
+ID: 2280492
+Date: 15 February 2019
+
+
+A count: 41
+T count: 36
+C count: 31
+G count: 45
+
+
+Sum: -36203527
+Mean: -6.03392e+06
+Variance: -3.64082e+13
+Standard deviation: -nan
+Sum squared: 1.97519e+08
+
+
+Probability of A: 1
+Probability of T: 1
+Probability of C: 1
+Probability of G: 1
+
+
