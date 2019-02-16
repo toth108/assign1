@@ -5,6 +5,7 @@
 
 using namespace std; 
 
+// collect number of occurences in each line
 int Nucleotides::nCount(int sum, string lineString)
 {
     a += std::count(lineString.begin(), lineString.end(), 'A');

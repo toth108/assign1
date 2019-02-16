@@ -33,18 +33,10 @@ int main (int argc, char** argv)
         string tempLine = fr.readFile();
         
         tempSum = s.lineLeng(tempLine);
-        cout << "sum " << s.getSum(tempSum)<< endl; // delete later 
         tempLineNumSum = s.lineNumSum++;
-        cout << "line count " << (tempLineNumSum)<< endl; // delete later 
         tempSumSquared = s.getSumSquared(s.sum);
-        cout << "sum squared " << (tempSumSquared)<< endl; // delete later 
 
         n.nCount(tempSum, tempLine);
-
-        cout << "a count " << (n.a)<< endl; // delete later 
-        cout << "t count " << (n.t)<< endl; // delete later 
-        cout << "c count " << (n.c)<< endl; // delete later 
-        cout << "g count " << (n.g)<< endl; // delete later 
     }  
 
     double tempMean = calc.mean(s.sum, tempLineNumSum);
@@ -52,24 +44,10 @@ int main (int argc, char** argv)
     double tempStdVar = calc.stdDev(tempVar);
 
 
-    cout << "sum total " << (s.sum)<< endl; // delete later 
-    cout << "line count total " << (tempLineNumSum)<< endl; // delete later 
-    cout << "sum squared total " << (tempSumSquared)<< endl; // delete later 
-    cout << "mean total " << (tempMean)<< endl; // delete later
-    cout << "variance " << (tempVar)<< endl; // delete later 
-    cout << "standard deviation " << (tempStdVar)<< endl; // delete later 
-
-
-
     double probA = n.a/tempSum; 
     double probT = n.t/tempSum; 
     double probC = n.c/tempSum; 
     double probG = n.g/tempSum; 
-    cout << "prob A " << (probA)<< endl; // delete later 
-    cout << "prob T " << (probT)<< endl; // delete later 
-    cout << "prob C " << (probC)<< endl; // delete later 
-    cout << "prob G " << (probG)<< endl; // delete later
-
 
 
     // output file 
@@ -101,7 +79,6 @@ int main (int argc, char** argv)
     outFile << "\n"<< endl;
     
 
-
     // Gaussian distribution
     double pi = 3.14159265358979323846;
 
@@ -110,10 +87,7 @@ int main (int argc, char** argv)
     double ln = log(aRand);
 
     double C = sqrt(-2*ln) * cos(2*pi*bRand);
-    double D = (tempMean*C) + tempStdVar;
-
-    cout << "D: " << (D)<< endl; // delete later 
-    
+    double D = (tempMean*C) + tempStdVar;    
 
 
     // ask if user would like to run another file or exit the program
